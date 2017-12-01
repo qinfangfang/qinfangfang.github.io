@@ -87,7 +87,7 @@
       },
       created: function () {
       	let self = this;
-        this.$http.get('http://www.easy-mock.com/mock/5a129cbe46ed8d690fddccdf/example/goods')
+        this.$http.get('./static/data/index.json')
         	.then(function(res) {
       			// console.log(res);
       			this.goodsList = res.body;
